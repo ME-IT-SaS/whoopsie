@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Server On Vacation</title>
+		<style>
+			body {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				font-family: Arial, sans-serif;
+				background-color: #f7f9fc;
+				color: #333;
+				text-align: center;
+				padding-top: 50px;
+			}
+			.container {
+				padding: 10px;
+				width: 80%;
+			}
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 20px;
+				color: #ff5722;
+			}
+			p {
+				font-size: 1.25rem;
+				margin-bottom: 30px;
+			}
+			.image {
+				max-width: 100%;
+				height: auto;
+				margin-bottom: 20px;
+			}
+			footer {
+				font-size: 0.85rem;
+				color: #777;
+			}
+			.contact {
+				font-size: 1rem;
+				margin-top: 20px;
+			}
+			.contact a {
+				color: #ff5722;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Server On Vacation!</h1>
+			<img
+				src="https://meit.shop/wp-content/uploads/2023/06/dancingcat.gif"
+				alt="Server on Vacation"
+				class="image"
+			/>
+			<p>
+				Our server is currently taking a break to recharge. It will be back
+				soon!
+			</p>
+			<p class="contact">
+				Reach out to us
+				<a href="https://meit.com.sg/feedback/" target="_blank">here</a>.
+			</p>
+			<footer>
+				&copy; <span id="current-year"></span> ME-IT Solutions & Services. All
+				rights reserved.
+			</footer>
+		</div>
+
+		<script>
+			// Get the current year
+			const currentYear = new Date().getFullYear();
+			// Display the current year in the footer
+			document.getElementById('current-year').textContent = currentYear;
+		</script>
+	</body>
+</html>
